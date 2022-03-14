@@ -73,9 +73,15 @@ var gulp = require('gulp'),                                 // подключа�
     pngquant = require('imagemin-pngquant'),                // плагин для сжатия png
     rimraf = require('gulp-rimraf'),                        // плагин для удаления файлов и каталогов
     version = require('gulp-version-number'),               // плагин для добавлении версий css и js файлов
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    ghPages = require('gulp-gh-pages');
 
 /* задачи */
+
+gulp.task('deploy', function () {
+    return gulp.src('./build/**/*')
+    .pipe(ghPages())
+});
 
 // запуск сервера
 gulp.task('webserver', function () {

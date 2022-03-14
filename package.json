@@ -10,12 +10,15 @@
     "url": "git://github.com/alexsoin/gulp-start-projet.git"
   },
   "dependencies": {
+    "bootstrap": "^4.2.1",
+    "gift": "^0.10.2",
+    "gulp-gh-pages": "^0.5.4",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.6",
-    "bootstrap": "^4.2.1"
+    "popper.js": "^1.14.6"
   },
   "scripts": {
     "start": "gulp",
+    "deploy": "gulp deploy",
     "clean": "gulp clean:build",
     "img": "gulp image:build webp:build"
   },
