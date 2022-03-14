@@ -1,0 +1,121 @@
+.price {
+  padding-top: 103px;
+  margin: 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 307px;
+    height: 282px;
+    background: url('../img/purse.png') center no-repeat;
+    background-size: cover;
+    left: 12vw;
+    top: 30%;
+  }
+
+  @media(max-width: $table-width) {
+    padding-top: 29px;
+
+    &::before {
+      width: 258px;
+      height: 223px;
+      left: 2vw;
+    }
+  }
+
+  @media(max-width: $mobile-width) {
+    padding-top: 47px;
+
+    &::before {
+      width: 122px;
+      height: 122px;
+      left: 1vw;
+      top: 79px;
+    }
+  }
+}
+
+.price__title {
+  font-family: Neucha, cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  max-width: 408px;
+  margin-bottom: 105px;
+  left: 52vw;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 629px;
+    height: 191px;
+    background: url('../img/cloud-3.svg') no-repeat;
+    background-size: cover;
+    left: -45%;
+    top: -30%;
+    z-index: -1;
+  }
+
+  @media(max-width: $table-width) {
+    font-size: 25px;
+    line-height: 28px;
+    max-width: 319px;
+    left: 45%;
+    margin-bottom: 85px;
+
+    &::before {
+      background-size: contain;
+      width: 472px;
+      left: -40%;
+    }
+  }
+
+  @media(max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    max-width: 225px;
+    left: 35%;
+    margin-bottom: 105px;
+
+    &::before {
+      background: url('../img/cloud-3-mobile.svg') no-repeat;
+      width: 350px;
+      left: -4%;
+      top: -60px;
+    }
+  }
+}
+
+.price__text {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  max-width: 531px;
+  max-width: 48vw;
+  margin-bottom: 86px;
+  left: 50%;
+
+  @media(max-width: $table-width) {
+    max-width: 420px;
+    left: 40%;
+  }
+
+  @media(max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    max-width: 365px;
+    left: 0;
+    margin: 0 auto;
+    margin-bottom: 61px;
+  }
+}

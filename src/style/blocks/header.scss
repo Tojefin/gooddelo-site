@@ -1,0 +1,119 @@
+.header {
+  height: 57px;
+  z-index: 1;
+
+  @media(max-width: $table-width) {
+    height: 0;
+  }
+}
+
+.header__nav {
+  height: 100%;
+  padding: 0 140px 0 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media(max-width: $table-width) {
+    padding: 0;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 43px;
+
+  @media(max-width: $table-width) {
+    position: absolute;
+    top: -100vh;
+    transition: all ease 0.3s;
+    background: linear-gradient(164.05deg, #FFFFFF 0%, #439B90 168%);
+    padding: 50px 0 63px 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+  }
+}
+
+.header__link{
+  display: inherit;
+  width: 105px;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &--active{
+    a {
+      color: #439B90;
+    }
+  }
+
+  @media(max-width: $table-width) {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+
+    a {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: left;
+      color: #439B90;
+    }
+
+    &--active{
+      a {
+        font-weight: 800;
+        color: #358076;
+      }
+    }
+  }
+}
+
+.header__telephone {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  width: 147px;
+
+  @media(max-width: $table-width) {
+    display: none;
+  }
+}
+
+.header__button {
+  display: none;
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  width: 35px;
+  height: 30px;
+  background: url('../img/menu-button.svg');
+  background-size: cover;
+
+  @media(max-width: $table-width) {
+    display: block;
+  }
+
+  @media(max-width: $mobile-width) {
+    top: 10px;
+    right: 10px;
+    width: 27px;
+    height: 23px;
+  }
+}

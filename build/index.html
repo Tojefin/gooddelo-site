@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Useful meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=+79879877987">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Mukta&family=Neucha&display=swap" rel="stylesheet">
+    
+    <link href="css/main.min.css" rel="stylesheet" />
+    
+    <script defer src="js/main.min.js"></script>
+    <title>Gooddelo | СЕРВИС ПО НАСТРОЙКЕ БИЗНЕСА</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__link header__link--active"><a href="/">Главная</a></li>
+          <li class="header__link"><a href="#">Чем я занимаюсь</a></li>
+          <li class="header__link"><a href="/#person">Меня зовут</a></li>
+          <li class="header__link"><a href="#">Как я это делаю</a></li>
+          <li class="header__link"><a href="/#contacts">Контакты</a></li>
+        </ul>
+        <a class="header__telephone" href="tel:79879877987">+7(987)987-7-987</a>
+      </nav>
+      <input class="header__button" type="button" name="menu" onclick="menuOpen()">
+    </header>
+    <section class="main_info">
+      <h1 class="main_info__title">СЕРВИС ПО НАСТРОЙКЕ БИЗНЕСА</h1>
+      <p class="main_info__text">&nbsp;&nbsp;Хочешь "чудо-таблетку" для твоего Бизнеса? ТАКОЙ НЕТ. Ты явно уже в курсе,
+        что <mark>Свой Бизнес - это не "сказочная страна"</mark> куда можно попасть, а чётко
+        отлаженный механизм, который действует по определенным принципам и законам.
+        И если ты реально <mark>хочешь разобраться "что же сломалось?" или “куда тут нажать,
+        чтобы всё работало?”</mark>, а не ждешь "чудес под таблетками", как некоторые,
+        то ты уже на правильном пути.</p>
+      <button class="button" type="button" name="button" onclick="popupShow('popup-form')">Оставить заявку</button>
+    </section>
+    <section class="foreword">
+      <p class="foreword__text">А дальше я должен тебе рассказать, в чём суть предложения...</p>
+    </section>
+    <section class="tactic">
+      <h2 class="tactic__title">Настройка бизнеса - это всегда комплекс мер, который состоит из следущих элементов:</h2>
+      <ul class="tactic__list">
+        <li class="tactic__item">1. Симптомы. Какую проблему / задачу ты видишь сам.</li>
+        <li class="tactic__item">2. Диагностика. Или, проще говоря, аудит Бизнеса, где ты увидишь точки роста своего Бизнеса.</li>
+        <li class="tactic__item">3. "Что будет после "ремонта"? Конкретно в цифрах, что ожидается по итогам работы,
+          какое время это займёт, необходимые ресурсы и сколько это в деньгах.</li>
+        <li class="tactic__item">4. Ремонт. Самое важное не разработать, а внедрить. На этом сыпятся горе
+          коучи/ тренера/ консультанты (нужное подчеркнуть).</li>
+        <li class="tactic__item">5. Обкатка. После внедрения необходимо сделать так, чтобы это
+          работало самостоятельно и не зависело от человека со стороны.</li>
+      </ul>
+    </section>
+    <section class="person">
+      <br class="anchor" id="person">
+      <h2 class="person__title">Кстати, меня зовут Иван!</h2>
+      <p class="person__text">&nbsp;&nbsp;Я - мастер по настройке Бизнеса. Вместе со своей командой <mark>мы делаем так,
+        чтобы Бизнес работал</mark> "как часы" - был чётко систематизирован, структурирован,
+        а значит, легко управляем и с минимальной зависимостью от человеческого фактора.<br>
+        &nbsp;&nbsp;Если хочешь подробностей - жмякай сюда</p>
+        <button class="button" type="button" onclick="popupShow('services')">С чем я работаю</button>
+        <!-- onclick="location.href='/services.html'" -->
+    </section>
+    <section class="story">
+      <h2 class="story__title">Где я всего этого нахватался?</h2>
+      <p class="story__text">Ты же явно сто раз уже слышал историю про крутого бизнес-тренера и его
+        успешную команду и т.п. Но если правда хочется увидеть увлекательную
+        историю мастера по настройке бизнеса - тебе сюда </p>
+      <button class="button" type="button" name="button">Мой опыт</button>
+    </section>
+    <section class="price">
+      <h2 class="price__title">Те кто подумал: “сейчас там будут заоблачные цены!” - не обламывай себя.</h2>
+      <p class="price__text">Всего этого нет, потому что <mark>цена сервиса по настройке бизнеса полностью привязана
+        к росту твоего дохода</mark>, который по итогам внедрения всех инструментов ты себе обеспечишь,
+        то есть, чем больше зарабатываешь ты, тем больше зарабатываю я со своей командой.
+        Только так и никаких "сферических коней в вакууме"</p>
+    </section>
+    <section class="request">
+      <p class="request__text">Если ты читаешь эти строки, то потребность у тебя явно есть, осталось
+        сделать всего один шаг. Оставляй заявку, задавай вопросы, и будем решать “Что дальше?”.</p>
+      <button class="button" type="button" name="button" onclick="popupShow('popup-form')">Оставить заявку</button>
+    </section>
+    <footer class="footer">
+      <div class="footer__contacts" id="contacts">
+        <h2 class="footer__title">НАШИ КОНТАКТЫ</h2>
+        <ul class="footer__list">
+          <li class="footer__item">Самара, ул.Антонова-Овсеенко, 44Б, этаж 7, офис 704</li>
+          <li class="footer__item">Телефон: <br><a href="tel:79879877987">+7 (987) 987-7-987</a></li>
+          <li class="footer__item">Email: <br><a href="email:delo@gooddelo.com">delo@gooddelo.com</a></li>
+        </ul>
+        <ul class="footer__socials">
+          <li class="footer__link"><a href="https://t.me/Udvayzer"><img src="/img/telegram.png" alt="Telegram" loading="lazy"></a></li>
+          <li class="footer__link"><a href="tel:79879877987"><img src="/img/phone.png" alt="Telegram" loading="lazy"></a></li>
+          <li class="footer__link"><a href="https://wa.me/+79879877987"><img src="/img/whatsapp.png" alt="Whatsapp" loading="lazy"></a></li>
+          <li class="footer__link"><a href="viber://chat?number=%2B79879877987"><img src="/img/viber.png" alt="Viber" loading="lazy"></a></li>
+        </ul>
+      </div>
+      <div class="footer__map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=53.212847,%2050.215836+(Gooddelo)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+        </iframe>
+      </div>
+    </footer>
+  </div>
+  <div class="popup-container"></div>
+  <template id="popups">
+    <div class="pop-services" id="services">
+      <button class="popup__close" type="button" name="close" onclick="popupShow()"></button>
+      <h2 class="pop-services__title" >С ЧЕМ Я РАБОТАЮ</h2>
+      <ul class="pop-services__accordions-list">
+        <li class="pop-services__item">
+          <h3 class="pop-services__item-title" onclick="accordion(this)">УПРАВЛЕНИЕ КАЧЕСТВОМ РАБОТЫ ПЕРСОНАЛОМ</h3>
+          <div class="pop-services__item-text" name="accordion">
+            <br>
+            <p>Управление качеством работы персоналом. Это когда компания
+              ЛИБО полностью выстраивает систему от момента</p>
+            <ul>
+              <li>подбора персонала;</li>
+              <li>формирования и внедрения адаптационного курса;</li>
+              <li>внедрения системы наставничества с эффективной мотивацией;</li>
+              <li>внедрение KPI и грейдов;</li>
+              <li>внедрение цикличной системы обучения и “прокачки скиллов”; *активная ссылка на блок Обучение*</li>
+              <li>внедрение уникальной системы Gideone; *активная ссылка на страницу Gideone*</li>
+              <li>внедрение системы развития управленческих навыков; *активная ссылка на блок УПравленческих навыков*</li>
+            </ul>
+            <p>ЛИБО “прокачка” одного из этих элементов.</p>
+            <br>
+          </div>
+        </li>
+        <li class="pop-services__item">
+          <h3 class="pop-services__item-title" onclick="accordion(this)">ВЫСОКОКЛАССНЫЙ СЕРВИС</h3>
+          <div class="pop-services__item-text" name="accordion">
+            <br>
+            <p>  Это когда компания принимает для себя решение ЛИБО <br><br>
+              внедрить стандарты высококлассного сервиса на всех
+              уровнях работы и на всех этапах продаж. <br><br>ЛИБО нет :)</p>
+            <br>
+          </div>
+        </li>
+        <li class="pop-services__item">
+          <h3 class="pop-services__item-title" onclick="accordion(this)">СТРАТЕГИЯ И ТАКТИКА РАЗВИТИЯ КОМПАНИИ</h3>
+          <div class="pop-services__item-text" name="accordion">
+            <br>
+            <p>Стратегия и тактика развития компании. Это когда в компании ЛИБО </p>
+            <ul>
+              <li>организуется масштабная сессия стратегического планирования с привлечением всего управляющего состава;</li>
+              <li>разрабатываются цели/ задачи/ миссии/ принципы компании;</li>
+              <li>выстраивается стратегия развития компании на 1-3 года с
+                ежемесячной тактической разбивкой задач на отделы компании.</li>
+            </ul>
+            <p>ЛИБО “прокачка” одного из этих элементов.</p>
+            <br>
+          </div>
+        </li>
+        <li class="pop-services__item">
+          <h3 class="pop-services__item-title" onclick="accordion(this)">СЛУЖБА МАРКЕТИНГА</h3>
+          <div class="pop-services__item-text" name="accordion">
+            <br>
+            <p>Служба маркетинга. Это когда в компании ЛИБО</p>
+            <ul>
+              <li>полностью внедряется служба маркетинга с описанием целей и задач,
+                карты компетенций входящих в неё сотрудников и должностными инструкциями;</li>
+              <li>разрабатываются и внедряются Формы Управленческой Отчётности,
+                как элемент контроля и управления эффективностью работы отдела;</li>
+              <li>разрабатываются и внедряются ключевые метрики и специализированное
+                программное обеспечение для управления ими; *активная ссылка на Gooddelo.com*</li>
+              <li>внедрение ключевых механик маркетинговой активности;</li>
+              <li>разработка и внедрение программы лояльности;</li>
+              <li>внедрение интерактивной карты с рабочим пространством маркетолога;</li>
+              <li>разработка и внедрение стандартов маркетинговой активности.</li>
+            </ul>
+            <p>ЛИБО “прокачка” одного из этих элементов.</p>
+            <br>
+          </div>
+        </li>
+        <li class="pop-services__item">
+          <h3 class="pop-services__item-title" onclick="accordion(this)">ПОЛНОЦЕННЫЙ ЦЕНТР КОРПОРОТИВНОГО ОБУЧЕНИЯ (ЦКО)</h3>
+          <div class="pop-services__item-text" name="accordion">
+            <br>
+            <p>Полноценный Центр Корпоративного Обучения (ЦКО). Это когда в компании ЛИБО</p>
+            <ul>
+              <li>внедряются в штат Бизнес-тренер/ Тренер по ассортименту/ Специалист по оценке персонала
+                (или все три функции совмещаются в одном лице) и под каждую должностную единицу
+                формируются принципы подбора/ карта компетенций/ должностная инструкция/
+                формы управленческой отчётности;</li>
+              <li>внедряется система обучения с формированием ежегодного/ ежемесячного плана обучения;</li>
+              <li>внедряются стандарты видов обучения и оценки персонала;</li>
+              <li>внедряет весь перечень необходимого методического материала;</li>
+              <li>внедряется уникальная и высокоэффективная система управления качеством
+                работы персоналом Gideone; *активная ссылка на сайт Gideone*</li>
+              <li>внедряется стандартный или расширенный блок тренингов по технике продаж и управленческим навыкам;</li>
+              <li>внедряются метрики и критерии оценки эффективности проводимого обучения.</li>
+            </ul>
+            <p>ЛИБО “прокачка” одного из этих элементов, а также проведение любого из навыковых тренингов.</p>
+            <br>
+          </div>
+        </li>
+        <li class="pop-services__item">
+          <h3 class="pop-services__item-title" onclick="accordion(this)">СИСТЕМА УПРАВЛЕНИЯ ПРОДАЖАМИ</h3>
+          <div class="pop-services__item-text" name="accordion">
+            <br>
+            <p>Система управления продажами. Это когда в компании ЛИБО полностью
+              перерабатывается система управления продажами и персоналом</p>
+            <ul>
+              <li>начиная с внедрения принципов ДДС (Движение Денежных Средств); *активная ссылка на блок ДДС</li>
+              <li>внедрения принципов систематических собраний;</li>
+              <li>внедрение уникальной системы автозадач; *ссылка на Gooddelo.com</li>
+              <li>внедрение системы обучения и “прокачки скиллов” по управленческим навыкам;</li>
+              <li>внедрение эффективной системы прогнозирования продаж с качественной визуализацией;</li>
+              <li>внедрение всего перечня систематических и ситуационных задач линейки управления.</li>
+            </ul>
+            <p>ЛИБО “прокачка” одного из этих элементов.</p>
+            <br>
+          </div>
+        </li>
+        <li class="pop-services__item">
+          <h3 class="pop-services__item-title" onclick="accordion(this)">ДВИЖЕНИЕ ДЕНЕЖНЫХ СРЕДСТВ (ДДС)</h3>
+          <div class="pop-services__item-text" name="accordion">
+            <br>
+            <p>Движение Денежных Средств (ДДС). Это когда компания ЛИБО</p>
+            <ul>
+              <li>полностью внедряет систему контроля и управления ДДС
+                в режиме онлайн на всех направлениях прихода и расхода денежных средств;</li>
+              <li>происходит разбивка на ключевые метрики с качественной визуализацией и работой в режиме онлайн;</li>
+              <li>оптимизируется расходная часть компании и внедряются инструменты контроля и управления ею;</li>
+              <li>внедряется система KPI с завязкой на ключевых метриках;</li>
+              <li>разрабатывается и внедряется специализированное программное обеспечение для
+                безопасного управления ДДС.*активная ссылка на Gooddelo.com</li>
+            </ul>
+            <p>ЛИБО “прокачка” одного из этих элементов.</p>
+            <br>
+          </div>
+        </li>
+        <li class="pop-services__item">
+          <h3 class="pop-services__item-title" onclick="accordion(this)">И МНОГОЕ ДРУГОЕ...</h3>
+          <div class="pop-services__item-text" name="accordion">
+            <br>
+            <ul>
+              <li>разработка специализированного Программного Обеспечения;</li>
+              <li>крутой уникальный дизайн;</li>
+              <li>любой вид навыкового обучения;</li>
+              <li>стратегические и фасилитационные сессии</li>
+              <li>создание брендбука или его элементов;</li>
+              <li>разработка уникального стиля чётко бьющего в ЦА;</li>
+              <li>уникальная система управления SMM активностью;</li>
+            </ul>
+            <p>и многое многое многое...</p>
+            <br>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="pop-form" id="popup-form">
+      <button class="popup__close" type="button" name="close" onclick="popupShow()"></button>
+      <h1 class="pop-form__title">Заполните данные и мы свяжемся с вами</h1>
+      <form class="pop-form__form" action="http://192.168.3.43/api/v1/sendform" method="post">
+        <input class="pop-form__input" type="text" name="Name" placeholder="Введите имя" required>
+        <input class="pop-form__input" type="tel" pattern="[+]{0,1}[0-9]{5,}" name="Phone" placeholder="Номер телефона" required>
+        <input class="pop-form__input" type="email" name="Email" placeholder="E-mail" required>
+        <textarea class="pop-form__input rows="8" cols="80" name="Commnet" placeholder="Комментарий"></textarea>
+        <button class="button" type="submit">Оставить заявку</button>
+      </form>
+    </div>
+  </template>
+</body>
+</html>

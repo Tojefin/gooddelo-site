@@ -1,0 +1,12 @@
+.container {
+  background-color: #100F0D;
+  background-image: url('../img/bg-dots.png');
+  overflow: hidden;
+}
+
+.anchor {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -120px;
+}

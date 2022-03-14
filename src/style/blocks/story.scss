@@ -1,0 +1,110 @@
+.story {
+  padding: 210px 0 155px 17vw;
+  background: top no-repeat;
+  background-size: cover;
+
+  @supports not (background-image: url('../img/pop-art-3.webp')) {
+    background-image: url('../img/pop-art-3.png');
+  }
+  background-image: url('../img/pop-art-3.webp');
+
+  @media(max-width: $table-width) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 183px 0 130px 0;
+
+    @supports not (background-image: url('../img/pop-art-3-table.webp')) {
+      background-image: url('../img/pop-art-3-table.png');
+    }
+    background-image: url('../img/pop-art-3-table.webp');
+  }
+
+  @media(max-width: $mobile-width) {
+    padding: 131px 0 152px 0;
+
+    @supports not (background-image: url('../img/pop-art-3-mobile.webp')) {
+      background-image: url('../img/pop-art-3-mobile.png');
+    }
+    background-image: url('../img/pop-art-3-mobile.webp');
+  }
+}
+
+.story__title {
+  font-family: Neucha, cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  margin-left: 92px;
+  color: #FFFFFF;
+  margin-bottom: 81px;
+  max-width: 223px;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 631px;
+    height: 120px;
+    background: url('../img/cloud-2.svg') no-repeat;
+    background-size: cover;
+    left: -259px;
+    top: -40%;
+    z-index: -1;
+  }
+
+  @media(max-width: $table-width) {
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 101px;
+    max-width: 372px;
+
+    &::before {
+      width: 617px;
+      left: -60%;
+      top: -150%;
+    }
+  }
+
+  @media(max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 64px;
+    max-width: 165px;
+    margin-left: 0;
+
+    &::before {
+      width: 396px;
+      height: 77px;
+      left: -77%;
+      top: -45%;
+    }
+  }
+}
+
+.story__text {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 50px;
+  max-width: 45%;
+
+  @media(max-width: $table-width) {
+    margin-bottom: 55px;
+    text-align: center;
+    max-width: 65%;
+  }
+
+  @media(max-width: $mobile-width) {
+    margin-bottom: 42px;
+    text-align: center;
+    max-width: 365px;
+  }
+}

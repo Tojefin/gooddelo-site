@@ -1,0 +1,128 @@
+.pop-services {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-top: 48px;
+  background: center no-repeat;
+  background-size: cover;
+
+  @supports not (background-image: url('../img/pop-art-adv.webp')) {
+    background-image: url('../img/pop-art-adv.png');
+  }
+  background-image: url('../img/pop-art-adv.webp');
+
+  @media(max-width: $mobile-width) {
+    padding: 48px 5px 0;
+  }
+}
+
+.pop-services__title {
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 55px;
+  text-align: center;
+  color: #439B90;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.pop-services__accordions-list {
+  margin: 0 auto;
+  max-width: 555px;
+}
+
+.pop-services__item {
+  margin-bottom: 21px;
+  background: #FF8D07;
+  border: 1px solid #FF8D07;
+  overflow: hidden;
+
+  &:nth-child(2n) {
+    background: #1C1A18;
+    border: 1px solid #1C1A18;
+    .service-card__content {
+      & p, li {
+        color: #FFFFFF;
+      }
+    }
+    .pop-services__item-title {
+      color: #FFFFFF;
+    }
+  }
+
+  &::before {
+    content: counter(list-item);
+    position: absolute;
+    left: 15px;
+    top: -8px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 73px;
+    color: #439B90;
+  }
+
+  &::after {
+    content: '▼';
+    position: absolute;
+    right: 23px;
+    top: 22px;
+    color: #FFFFFF;
+    z-index: 0;
+    transition: all ease 0.3s
+  }
+
+  &--active {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.pop-services__item-title {
+  display: inline-flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  padding: 0 68px 0 67px;
+  width: 100%;
+  height: 58px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.pop-services__item-text {
+  padding: 0 28px;
+  background: #FFFFFF;
+  max-height: 0;
+  overflow: hidden;
+  transition: all ease 0.3s;
+
+  & p, li {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1C1A18;
+    list-style: initial;
+  }
+
+  & ul {
+    margin: 10px 0;
+    margin-left: 20px;
+  }
+
+  & br {
+    display: inline-block;
+    margin: 12px 0;
+    content: '';
+  }
+}

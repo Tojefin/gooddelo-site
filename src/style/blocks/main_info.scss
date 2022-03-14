@@ -1,0 +1,111 @@
+.main_info {
+  padding: 75px 0 77px 10vw;
+  background: center no-repeat;
+  background-size: cover;
+
+  @supports not (background-image: url('../img/pop-art-1.webp')) {
+    background-image: url('../img/pop-art-1.png');
+  }
+  background-image: url('../img/pop-art-1.webp');
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 599px;
+    height: 839px;
+    background: url('../img/avatar-1.png') center no-repeat;
+    background-size: contain;
+    left: 55%;
+    top: -15%;
+  }
+
+  @media(max-width: $table-width) {
+    padding: 29px 0 83px 10px;
+
+    @supports not (background-image: url('../img/pop-art-1-table.webp')) {
+      background-image: url('../img/pop-art-1-table.png');
+    }
+    background-image: url('../img/pop-art-1-table.webp');
+
+    &::before {
+      width: 452px;
+      height: 615px;
+      left: 46%;
+      top: 17px;
+    }
+  }
+
+  @media(max-width: $mobile-width) {
+    padding: 33px 0 74px;
+    display: grid;
+    justify-items: center;
+
+    @supports not (background-image: url('../img/pop-art-1-mobile.webp')) {
+      background-image: url('../img/pop-art-1-mobile.png');
+    }
+    background-image: url('../img/pop-art-1-mobile.webp');
+    background-size: cover;
+
+    &::before {
+      width: 259px;
+      height: 352px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 95px;
+    }
+  }
+}
+
+.main_info__title {
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 66px;
+  color: #439B90;
+  margin-bottom: 60px;
+
+  @media(max-width: $table-width) {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 48px;
+    max-width: 578px;
+  }
+
+  @media(max-width: $mobile-width) {
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    max-width: 288px;
+    margin-bottom: 313px;
+  }
+}
+
+.main_info__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  max-width: 583px;
+  margin-bottom: 80px;
+
+  & mark {
+    font-weight: 800;
+  }
+
+  @media(max-width: $table-width) {
+    margin-bottom: 48px;
+    max-width: 378px;
+  }
+
+  @media(max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 5px;
+  }
+}

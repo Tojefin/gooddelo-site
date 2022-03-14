@@ -1,0 +1,11 @@
+<div class="pop-form" id="popup-form">
+  <button class="popup__close" type="button" name="close" onclick="popupShow()"></button>
+  <h1 class="pop-form__title">Заполните данные и мы свяжемся с вами</h1>
+  <form class="pop-form__form" action="http://192.168.3.43/api/v1/sendform" method="post">
+    <input class="pop-form__input" type="text" name="Name" placeholder="Введите имя" required>
+    <input class="pop-form__input" type="tel" pattern="[+]{0,1}[0-9]{5,}" name="Phone" placeholder="Номер телефона" required>
+    <input class="pop-form__input" type="email" name="Email" placeholder="E-mail" required>
+    <textarea class="pop-form__input rows="8" cols="80" name="Commnet" placeholder="Комментарий"></textarea>
+    <button class="button" type="submit">Оставить заявку</button>
+  </form>
+</div>

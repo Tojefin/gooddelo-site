@@ -1,0 +1,66 @@
+.foreword {
+  margin-top: 143px;
+  margin-bottom: 100px;
+
+  @media(max-width: $table-width) {
+    margin-top: 100px;
+    margin-bottom: 93px;
+  }
+
+  @media(max-width: $mobile-width) {
+    margin-top: 65px;
+    margin-bottom: 60px;
+  }
+}
+
+.foreword__text {
+  width: 327px;
+  left: 45vw;
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 33px;
+  color: #000000;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 725px;
+    height: 170px;
+    background: url('../img/cloud-1.svg') no-repeat;
+    background-size: cover;
+    left: -45%;
+    top: -40%;
+    z-index: -1;
+  }
+
+  @media(max-width: $table-width) {
+    width: 247px;
+    left: 0;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 27px;
+
+    &::before {
+      width: 635px;
+      height: 148px;
+      left: -65%;
+    }
+  }
+
+  @media(max-width: $mobile-width) {
+    width: 172px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 20px;
+
+    &::before {
+      width: 381px;
+      height: 89px;
+      left: -50%;
+      top: -16px;
+    }
+  }
+}
