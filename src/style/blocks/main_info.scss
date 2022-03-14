@@ -1,7 +1,7 @@
 .main_info {
   padding: 75px 0 77px 10vw;
   background: center no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 
   @supports not (background-image: url('../img/pop-art-1.webp')) {
     background-image: url('../img/pop-art-1.png');
@@ -11,11 +11,11 @@
   &::before {
     content: '';
     position: absolute;
-    width: 599px;
+    width: 42vw;
     height: 839px;
     background: url('../img/avatar-1.png') center no-repeat;
     background-size: contain;
-    left: 55%;
+    left: 53%;
     top: -15%;
   }
 
@@ -64,6 +64,7 @@
   line-height: 66px;
   color: #439B90;
   margin-bottom: 60px;
+  max-width: 53vw;
 
   @media(max-width: $table-width) {
     font-size: 50px;

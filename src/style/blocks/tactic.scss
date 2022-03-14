@@ -1,7 +1,7 @@
 .tactic {
   padding: 125px 0 147px 0;
   background: top no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 
   @supports not (background-image: url('../img/pop-art-2.webp')) {
     background-image: url('../img/pop-art-2.png');
