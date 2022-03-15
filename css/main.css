@@ -462,7 +462,7 @@ mark {
       line-height: 17px;
       left: 15px;
       margin-bottom: 55px;
-      max-width: 337px; }
+      max-width: 333px; }
       .tactic__item:nth-child(2n) {
         left: 15px; }
       .tactic__item::before {
