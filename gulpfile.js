@@ -131,6 +131,12 @@ gulp.task('fonts:build', function () {
         .pipe(gulp.dest(path.build.fonts));
 });
 
+// перенос остальных файлов
+gulp.task('copy:build', function () {
+    return gulp.src(['src/.htaccess', 'src/CNAME'])
+        .pipe(gulp.dest(path.build.html));
+});
+
 // обработка картинок
 gulp.task('image:build', function () {
     return gulp.src(path.src.img)                       // путь с исходниками картинок
@@ -175,6 +181,7 @@ gulp.task('build',
     gulp.series('clean:build',
         gulp.parallel(
             'html:build',
+            'copy:build',
             'css:build',
             'js:build',
             'fonts:build',
