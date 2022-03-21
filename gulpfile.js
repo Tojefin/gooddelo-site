@@ -133,7 +133,7 @@ gulp.task('fonts:build', function () {
 
 // перенос остальных файлов
 gulp.task('copy:build', function () {
-    return gulp.src(['src/.htaccess', 'src/CNAME'])
+    return gulp.src(['src/.htaccess'])
         .pipe(gulp.dest(path.build.html));
 });
 
