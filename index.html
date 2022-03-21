@@ -14,11 +14,11 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Mukta&family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Mukta&family=Neucha&display=swap&v=0c13b00afefba23edaf5e69e67bc5be5" rel="stylesheet">
     
-    <link href="css/main.min.css" rel="stylesheet" />
+    <link href="css/main.min.css?v=0c13b00afefba23edaf5e69e67bc5be5" rel="stylesheet" />
     
-    <script defer src="js/main.min.js"></script>
+    <script defer src="js/main.min.js?v=0c13b00afefba23edaf5e69e67bc5be5"></script>
     <title>Gooddelo | СЕРВИС ПО НАСТРОЙКЕ БИЗНЕСА</title>
 </head>
 <body>
@@ -266,7 +266,7 @@
     <div class="pop-form" id="popup-form">
       <button class="popup__close" type="button" name="close" onclick="popupShow()"></button>
       <h1 class="pop-form__title">Заполните данные и мы свяжемся с вами</h1>
-      <form class="pop-form__form" action="http://192.168.3.43/api/v1/sendform" method="post">
+      <form class="pop-form__form" action="https://gooddelonotify.tojefin.repl.co/api/v1/sendform/" method="post">
         <input class="pop-form__input" type="text" name="Name" placeholder="Введите имя" required>
         <input class="pop-form__input" type="tel" pattern="[+]{0,1}[0-9]{5,}" name="Phone" placeholder="Номер телефона" required>
         <input class="pop-form__input" type="email" name="Email" placeholder="E-mail" required>
