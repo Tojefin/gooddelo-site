@@ -5,9 +5,27 @@
     width: 502px;
     height: 703px;
     background: url('../img/avatar-1.png') center no-repeat;
-    background-size: contain;
+    background-size: cover;
     left: 55%;
     top: -2%;
+  }
+  @media (max-width: 1023px) {
+    &::before {
+      width: 402px;
+      height: 603px;
+      left: 55%;
+      top: -1%;
+    }
+  }
+
+  @media (max-width: 743px) {
+    &::before {
+      width: 259px;
+      height: 352px;
+      left: 50%;
+      top: 70px;
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -22,6 +40,22 @@
   line-height: 55px;
   max-width: 671px;
   color: #439B90;
+
+  @media (max-width: 1023px) {
+    font-size: 40px;
+    line-height: 45px;
+    max-width: 60%;
+  }
+
+  @media (max-width: 743px) {
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 313px;
+  }
 }
 
 .cases__text {
@@ -35,10 +69,19 @@
   margin-left: 10%;
   margin-bottom: 78px;
   max-width: 553px;
-}
 
-.cases__list {
+  @media (max-width: 1023px) {
+    max-width: 60%;
+  }
 
+  @media (max-width: 743px) {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
 }
 
 .cases__item {
@@ -46,8 +89,18 @@
   margin-bottom: 78px;
   padding-left: 20%;
   padding-right: 5%;
-  background: url('../img/pop-art-cases.png') no-repeat;
+  background: url('../img/pop-art-cases.png') center no-repeat;
   background-size: 100% 100%;
+
+  @media (max-width: 1023px) {
+    padding-left: 10%;
+  }
+
+  @media (max-width: 743px) {
+    padding-left: 5%;
+    background-size: auto 100%;
+    margin-bottom: 38px;
+  }
 }
 
 .cases__item-title {
@@ -64,6 +117,18 @@
   margin-bottom: 55px;
   background: url('../img/cloud-cases.svg') no-repeat;
   background-size: 100% 100%;
+
+  @media (max-width: 1023px) {
+    padding: 50px 20% 45px 20%;
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 743px) {
+    padding: 20px 20% 25px 20%;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .cases__item-text {
@@ -76,11 +141,9 @@
   letter-spacing: 0.05em;
   color: #000000;
   padding-bottom: 122px;
-}
 
-.cases__item-img {
-  position: absolute;
-  top: -148px;
-  left: 0px;
-  object-fit: fill;
+  @media (max-width: 743px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
