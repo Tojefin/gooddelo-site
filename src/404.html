@@ -2,15 +2,18 @@
 <html lang="ru">
 <head>
     //= template/head.html
+    <meta name="robots" content="noindex" />
     <title>Gooddelo | #404</title>
 </head>
 <body>
   <div class="container">
     //= template/header.html
-    <h1>404</h1>
-    <h2>Такой страницы не существует</h2>
-    <hr>
-    <small>Error #404 | Page not found</small>
+    <div class="error">
+      <h1 class="error__title">404</h1>
+      <h2 class="error__text">Такой страницы не существует</h2>
+      <hr>
+      <small class="error__code-info">Error #404 | Page not found</small>
+    </div>
     //= template/footer.html
   </div>
 </body>

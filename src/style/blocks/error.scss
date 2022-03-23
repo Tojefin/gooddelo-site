@@ -1,0 +1,66 @@
+.error {
+  background: #FFF;
+  padding: 3% 15%;
+}
+
+.error__title {
+  padding: 50px 157px 45px 176px;
+  max-width: 895px;
+  width: fit-content;
+  font-family: 'Neucha';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  color: #FF8D07;
+  margin-bottom: 55px;
+  background: url('../img/cloud-cases.svg') no-repeat;
+  background-size: 100% 100%;
+
+  @media (max-width: 1023px) {
+    padding: 50px 20% 45px 20%;
+    font-size: 80px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 743px) {
+    padding: 20px 20% 25px 20%;
+    font-size: 60px;
+    line-height: 20px;
+  }
+}
+
+.error__text {
+  max-width: 943px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-bottom: 122px;
+
+  @media (max-width: 743px) {
+    font-size: 20px;
+    line-height: 15px;
+  }
+}
+
+.error__code-info {
+  max-width: 943px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #555555;
+  padding-bottom: 122px;
+
+  @media (max-width: 743px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
