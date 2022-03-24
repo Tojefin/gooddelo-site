@@ -1,5 +1,4 @@
 function popupShow(id) {
-
   const container = document.querySelector('.popup-container')
   if (!container) {return console.log("Контейнер не найден")}
   container.addEventListener('click', function(event){
@@ -16,11 +15,10 @@ function popupShow(id) {
   }
 
   if (container.classList.contains('popup-container--active')) {
-    history.pushState("", document.title, window.location.pathname + window.location.search);
+    history.replaceState("", document.title, window.location.pathname + window.location.search);
+    history.back();
   }
-
   return container.classList.toggle('popup-container--active');
-
 }
 
 window.onhashchange = function(event) {
@@ -29,8 +27,8 @@ window.onhashchange = function(event) {
   }
 }
 
-window.onload = function() {
+window.addEventListener('load', () => {
   if (window.location.href.split('#').reverse()[0] == 'popup') {
-    history.pushState("", document.title, window.location.pathname + window.location.search);
+    history.replaceState("", document.title, window.location.pathname + window.location.search);
   }
-}
+});
