@@ -97,7 +97,6 @@ gulp.task('html:build', function () {
     return gulp.src(path.src.html)                  // выбор всех html файлов по указанному пути
         .pipe(plumber())                            // отслеживание ошибок
         .pipe(rigger())                             // импорт вложений
-        .pipe(version(config.version))              // добавление версий css и js
         .pipe(gulp.dest(path.build.html))           // выкладывание готовых файлов
         .pipe(webserver.reload({ stream: true }));  // перезагрузка сервера
 });
