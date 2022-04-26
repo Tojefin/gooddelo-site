@@ -12,6 +12,7 @@ function popupShow(id) {
     container.innerHTML = templates.content.querySelector('#'+id).outerHTML;
     window.location.hash = 'popup';
     if (container.classList.contains('popup-container--active')) {return}
+    onloadCallback()
   }
 
   if (container.classList.contains('popup-container--active')) {
